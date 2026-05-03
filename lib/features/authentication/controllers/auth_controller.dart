@@ -33,10 +33,11 @@ class AuthController extends GetxController {
   final isLoginLoading = false.obs;
 
   // ── OTP ──
-  final List<TextEditingController> otpControllers =
-      List.generate(4, (_) => TextEditingController());
-  final List<FocusNode> otpFocusNodes =
-      List.generate(4, (_) => FocusNode());
+  final List<TextEditingController> otpControllers = List.generate(
+    4,
+    (_) => TextEditingController(),
+  );
+  final List<FocusNode> otpFocusNodes = List.generate(4, (_) => FocusNode());
   final isOtpLoading = false.obs;
 
   // ── Signup ──
@@ -67,8 +68,10 @@ class AuthController extends GetxController {
           return ListTile(
             leading: Text(c['flag']!, style: const TextStyle(fontSize: 24)),
             title: Text(c['name']!),
-            trailing: Text(c['code']!,
-                style: const TextStyle(fontWeight: FontWeight.w600)),
+            trailing: Text(
+              c['code']!,
+              style: const TextStyle(fontWeight: FontWeight.w600),
+            ),
             onTap: () {
               selectedCountryCode.value = c['code']!;
               selectedCountryFlag.value = c['flag']!;
@@ -103,8 +106,11 @@ class AuthController extends GetxController {
 
   void verifyOtp() {
     if (fullOtp.length < 4) {
-      Get.snackbar('Error', 'Please enter all 4 digits',
-          backgroundColor: const Color(0xFFFFE0E0));
+      Get.snackbar(
+        'Error',
+        'Please enter all 4 digits',
+        backgroundColor: const Color(0xFFFFE0E0),
+      );
       return;
     }
     isOtpLoading.value = true;
