@@ -35,7 +35,7 @@ class JsonTypeConverter {
     }
 
     // already the correct type
-    if (value is T) return value as T;
+    if (value is T) return value;
 
     // ── num → int ──────────────────────────────────────────────
     if (T == int && value is num) return value.toInt() as T;
