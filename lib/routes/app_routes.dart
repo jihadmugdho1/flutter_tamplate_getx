@@ -7,12 +7,7 @@ class AppRoute {
   static const String loginScreen = "/loginScreen";
   static const String splashScreen = "/splashScreen";
   static const String bottomNavScreen = "/bottomNavScreen";
-  static const String glassbottomnavbar = "/glassbottomnavbar";
-  static const String verificationScreen = "/verificationScreen";
-  static const String signupScreen = "/signupScreen";
-  static const String editProfileScreen = "/editProfileScreen";
-  static const String editPetProfileScreen = "/editPetProfileScreen";
-  static const String settingsScreen = "/settingsScreen";
+
 
   static const String internetlost = "/internetlost";
   static const String communityScreen = "/communityScreen";
