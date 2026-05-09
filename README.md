@@ -108,3 +108,4 @@ Firebase/FCM, WebSocket and i18n scaffolding exist but are commented out. Enabli
 - Flutter docs → <https://docs.flutter.dev>
 - GetX docs → <https://pub.dev/packages/get>
 # flutter_tamplate_getx
+# massimotrava21
