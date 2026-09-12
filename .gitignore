@@ -17,7 +17,6 @@ migrate_working_dir/
 .idea/
 
 # VS Code related
-.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -76,7 +75,11 @@ app.*.map.json
 **/web/flutter.js
 
 # Environment / Secrets
-.env
-.env.*
 *.env
 secrets.dart
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat
+node_modules
